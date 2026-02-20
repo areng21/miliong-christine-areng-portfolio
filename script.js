@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 		'who|what|areng|about': "Hi! I'm Areng, a data engineer passionate about building scalable data infrastructure. I specialize in ETL/ELT pipelines, cloud platforms (AWS, Azure, BigQuery), and data analysis using Python, SQL, and modern BI tools like Power BI and Tableau.",
 		'skills|professions|expertise': "I'm proficient in: Python, SQL, R, Airflow, Apache Spark, BigQuery, AWS, Azure, Power BI, Tableau, Kobo Toolbox, STATA, SPSS, Docker, Kubernetes, Kafka, DataDog, GitHub, and CI/CD pipelines. I specialize in designing data pipelines and performing exploratory data analysis.",
 		'projects|work|experience': "Check out my projects section! I've worked on Kaggle data exploration (Python/pandas), Google Drive projects, and interactive Colab notebooks. I focus on transforming raw data into actionable insights.",
+		'certifications': "Areng has a Masters Degree in Monitoring and Evaluation, a Bachelors Degree in Mathematics, Data Science Certifications from DataCamp, Mathematical Associations of Nairobi Unuversity and Cyber Shujaa!",
+		'where can Areng work': "Areng can work in Project Management,Monitoring and Evaluation, Data and AI, Customer Service and Virtual Assistance",
 		'contact|reach|email': "You can reach me at arengchristine@gmail.com or via GitHub at github.com/areng21. I'm also on X @christine_areng and available at +254-790-502-966. Feel free to get in touch!",
 		'hello|hi|hey': "Hi there! Welcome to my portfolio. Ask me anything about my work, skills, or background!",
 		'thanks|thank you': "You're welcome! Feel free to ask more questions!",
