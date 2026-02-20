@@ -88,12 +88,13 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 
 	.hero-image{width:200px;height:200px}
 	.about-inner{flex-direction:column;align-items:center}
 	.about-image{flex:0 0 auto;margin-top:1.5rem}
+	.contact-link img{animation:jingle 0.5s ease-in-out infinite}
 }
 
 @keyframes jingle{
-	0%{transform:rotate(0deg) translateX(0)}
-	25%{transform:rotate(-5deg) translateX(-2px)}
-	50%{transform:rotate(5deg) translateX(2px)}
-	75%{transform:rotate(-5deg) translateX(-2px)}
-	100%{transform:rotate(0deg) translateX(0)}
+	0%{transform:rotate(0deg) translateX(0) scale(1)}
+	25%{transform:rotate(-8deg) translateX(-3px) scale(1.05)}
+	50%{transform:rotate(8deg) translateX(3px) scale(1.05)}
+	75%{transform:rotate(-8deg) translateX(-3px) scale(1.05)}
+	100%{transform:rotate(0deg) translateX(0) scale(1)}
 }
