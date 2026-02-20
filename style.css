@@ -75,10 +75,10 @@ body{margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helveti
 .about-image img:hover{transform:scale(1.08);box-shadow:0 0 20px rgba(166,124,82,0.3),0 12px 28px rgba(43,37,32,0.15)}
 
 .contact-page{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
-.contact-bg{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center;background-attachment:fixed;filter:blur(8px) brightness(0.7);z-index:1}
-.contact-overlay{position:relative;z-index:2;width:100%;padding:4rem 0;background:rgba(255,255,255,0.08);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.contact-bg{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center;background-attachment:fixed;filter:blur(4px) brightness(0.9);z-index:1}
+.contact-overlay{position:relative;z-index:2;width:100%;padding:4rem 0;background:rgba(255,255,255,0.02);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .contact-content{max-width:700px}
-.about-section-overlay{background:rgba(255,255,255,0.65);padding:3rem;border-radius:16px;box-shadow:0 12px 40px rgba(16,24,40,0.2);border:1px solid rgba(255,255,255,0.5);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.about-section-overlay{background:rgba(255,255,255,0.45);padding:3rem;border-radius:16px;box-shadow:0 12px 40px rgba(16,24,40,0.2);border:1px solid rgba(255,255,255,0.25);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .about-section-overlay h2{margin-top:0;color:var(--accent);font-size:2rem;text-align:center;margin-bottom:1.5rem}
 .about-section-overlay h3{color:#8b7d73;text-align:center;margin:2rem 0 1.5rem;font-size:1.3rem;font-weight:600;letter-spacing:0.5px}
 .about-section-overlay p{text-align:center;color:var(--text);line-height:1.7;margin-bottom:1.5rem}
