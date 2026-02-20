@@ -80,7 +80,7 @@ body{margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helveti
 .contact-content{max-width:700px}
 .about-section-overlay{background:rgba(255,255,255,0.92);padding:3rem;border-radius:16px;box-shadow:0 12px 40px rgba(16,24,40,0.2);border:1px solid rgba(255,255,255,0.5)}
 .about-section-overlay h2{margin-top:0;color:var(--accent);font-size:2rem;text-align:center;margin-bottom:1.5rem}
-.about-section-overlay h3{color:var(--accent);text-align:center;margin:2rem 0 1.5rem;font-size:1.3rem}
+.about-section-overlay h3{color:#8b7d73;text-align:center;margin:2rem 0 1.5rem;font-size:1.3rem;font-weight:600;letter-spacing:0.5px}
 .about-section-overlay p{text-align:center;color:var(--text);line-height:1.7;margin-bottom:1.5rem}
 .contact-form-cute{display:grid;gap:1rem}
 .contact-form-cute input,.contact-form-cute textarea{padding:1rem;border:2px solid rgba(166,124,82,0.3);border-radius:10px;font-family:inherit;font-size:1rem;background:rgba(250,246,241,0.8);color:var(--text);transition:all 0.3s ease}
