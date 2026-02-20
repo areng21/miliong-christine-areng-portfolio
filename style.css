@@ -44,12 +44,13 @@ body{margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helveti
 .chatbot-send:hover{background:#c0905f;box-shadow:0 0 20px rgba(166,124,82,0.5);transform:scale(1.05)}
 .chatbot-send:active{transform:scale(0.98)}
 
-.contact-links{padding:3rem 0;text-align:left}
-.contact-grid{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:flex-start;align-items:center}
-.contact-link{display:flex;flex-direction:column;align-items:center;gap:.5rem;text-decoration:none;color:#6b5344;transition:opacity 0.3s ease}
-.contact-link img{width:40px;height:40px;object-fit:contain;filter:sepia(0.4) hue-rotate(10deg) saturate(0.7) brightness(0.9);animation:jingle 0.6s ease-in-out infinite}
-.contact-link span{font-weight:500;color:#6b5344}
-.contact-link:hover{opacity:0.7}
+.contact-links{padding:3rem 0;text-align:left;background:linear-gradient(135deg,rgba(166,124,82,0.05),rgba(166,124,82,0.08));border-radius:12px;margin:2rem 0;padding:3rem 2rem}
+.contact-grid{display:flex;flex-wrap:wrap;gap:2.5rem;justify-content:flex-start;align-items:center}
+.contact-link{display:flex;flex-direction:column;align-items:center;gap:0.75rem;text-decoration:none;color:#6b5344;transition:all 0.3s ease}
+.contact-link img{width:60px;height:60px;object-fit:contain;filter:sepia(0.4) hue-rotate(10deg) saturate(0.7) brightness(0.9);animation:jingle 0.5s ease-in-out infinite;transition:all 0.3s ease}
+.contact-link span{font-weight:700;color:#6b5344;font-size:1.05rem}
+.contact-link:hover{transform:scale(1.15)}
+.contact-link:hover img{width:75px;height:75px;filter:sepia(0.2) hue-rotate(10deg) saturate(1.1) brightness(1.1);animation:jingle 0.35s ease-in-out infinite}
 
 .projects{padding:2.5rem 0}
 .projects h2{margin-top:0}
@@ -93,8 +94,8 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 
 
 @keyframes jingle{
 	0%{transform:rotate(0deg) translateX(0) scale(1)}
-	25%{transform:rotate(-8deg) translateX(-3px) scale(1.05)}
-	50%{transform:rotate(8deg) translateX(3px) scale(1.05)}
-	75%{transform:rotate(-8deg) translateX(-3px) scale(1.05)}
+	25%{transform:rotate(-15deg) translateX(-5px) scale(1.1)}
+	50%{transform:rotate(15deg) translateX(5px) scale(1.1)}
+	75%{transform:rotate(-15deg) translateX(-5px) scale(1.1)}
 	100%{transform:rotate(0deg) translateX(0) scale(1)}
 }
