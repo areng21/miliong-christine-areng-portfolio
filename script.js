@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 			// Build mailto as a simple fallback
 			const subject = encodeURIComponent('Portfolio contact from '+name);
 			const body = encodeURIComponent(message + '\n\n— ' + name + ' ('+email+')');
-			window.location.href = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+			window.location.href = `mailto:arengchristine@gmail.com?subject=${subject}&body=${body}`;
 		})
 	}
 })
