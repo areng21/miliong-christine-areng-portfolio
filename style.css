@@ -36,10 +36,13 @@ body{margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helveti
 .chatbot-message.user{background:var(--accent);color:white;align-self:flex-end;text-align:right}
 .chatbot-message.bot{background:#f0e8df;color:var(--text);align-self:flex-start}
 .chatbot-input-group{display:flex;gap:0.5rem}
-.chatbot-input{flex:1;padding:0.6rem;border:1px solid #d6d9dd;border-radius:6px;font-family:inherit;transition:all 0.3s ease}
-.chatbot-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(166,124,82,0.1)}
-.chatbot-send{background:var(--accent);color:white;border:none;padding:0.6rem 1rem;border-radius:6px;cursor:pointer;transition:all 0.3s ease;font-weight:600}
-.chatbot-send:hover{background:#c0905f;box-shadow:0 0 15px rgba(166,124,82,0.4)}
+.chatbot-input{flex:1;padding:0.75rem;border:2px solid #d6d9dd;border-radius:8px;font-family:inherit;transition:all 0.3s ease;background:#faf6f1;cursor:text;font-size:0.95rem}
+.chatbot-input::placeholder{color:#a67c52;font-weight:500;opacity:0.8}
+.chatbot-input:hover{border-color:var(--accent);background:#fff;box-shadow:0 0 10px rgba(166,124,82,0.15)}
+.chatbot-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(166,124,82,0.15),0 0 15px rgba(166,124,82,0.25);background:#fff;transform:scale(1.01)}
+.chatbot-send{background:var(--accent);color:white;border:none;padding:0.75rem 1.2rem;border-radius:8px;cursor:pointer;transition:all 0.3s ease;font-weight:700;font-size:0.95rem;text-transform:uppercase;letter-spacing:0.5px}
+.chatbot-send:hover{background:#c0905f;box-shadow:0 0 20px rgba(166,124,82,0.5);transform:scale(1.05)}
+.chatbot-send:active{transform:scale(0.98)}
 
 .contact-links{padding:3rem 0;text-align:left}
 .contact-grid{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:flex-start;align-items:center}
