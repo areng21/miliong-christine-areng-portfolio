@@ -47,8 +47,8 @@ body{margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helveti
 .contact-links{padding: 50px;text-align:center;background:linear-gradient(135deg,rgba(166,124,82,0.05),rgba(166,124,82,0.08));border-radius:12px;margin:2rem auto;max-width: 1200px;width: 100%}
 .contact-grid{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-evenly;align-items:center;margin: 0 auto}
 .contact-link{display:flex;flex-direction:column;align-items:center;gap:0.75rem;text-decoration:none;color:#6b5344;transition:all 0.3s ease}
-.contact-link img{width:60px;height:60px;object-fit:contain;filter:sepia(0.4) hue-rotate(10deg) saturate(0.7) brightness(0.9);animation:jingle 0.5s ease-in-out infinite;transition:all 0.3s ease}
-.contact-link span{font-weight:700;color:#6b5344;font-size:1.05rem}
+.contact-link img{width:30px;height:60px;object-fit:contain;filter:sepia(0.4) hue-rotate(10deg) saturate(0.7) brightness(0.9);animation:jingle 0.5s ease-in-out infinite;transition:all 0.3s ease}
+.contact-link span{font-weight:500;color:#6b5344;font-size:0.8rem}
 .contact-link:hover{transform:scale(1.15)}
 .contact-link:hover img{width:75px;height:75px;filter:sepia(0.2) hue-rotate(10deg) saturate(1.1) brightness(1.1);animation:jingle 0.35s ease-in-out infinite}
 
