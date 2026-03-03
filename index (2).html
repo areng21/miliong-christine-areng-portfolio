@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Areng — Portfolio</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="mediaqueries.css">
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-inner">
+				<a class="brand" href="#">Areng</a>
+				<button id="nav-toggle" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+				<nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+					<ul>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container hero-inner">
+					<div class="chatbot-container">
+						<div class="chatbot-header">Ask about Areng</div>
+						<div class="chatbot-messages" id="chatbot-messages"></div>
+						<div class="chatbot-input-group">
+							<input type="text" id="chatbot-input" placeholder="Ask me anything..." class="chatbot-input">
+							<button id="chatbot-send" class="chatbot-send">Send</button>
+						</div>
+					</div>
+					<div class="hero-image"><img src="assets/canva-duo.png" alt="Areng Data Science / Machine Learning"></div>
+				</div>
+			</section>
+
+			<section class="contact-links container">
+				<div class="contact-grid">
+					<a href="mailto:arengchristine@gmail.com" class="contact-link" title="Email">
+						<img src="assets/email.png" alt="email icon">
+						<span>arengchristine@gmail.com</span>
+					</a>
+					<a href="https://github.com/areng21" target="_blank" rel="noopener" class="contact-link" title="GitHub">
+						<img src="assets/github.png" alt="github icon">
+						<span>GitHub</span>
+					</a>
+					<a href="https://x.com/christine_areng?s=11" target="_blank" rel="noopener" class="contact-link" title="X/Twitter">
+						<img src="assets/arrow.png" alt="twitter icon">
+						<span>@christine_areng</span>
+					</a>
+					<a href="tel:+254790502966" class="contact-link" title="Phone">
+						<img src="assets/checkmark.png" alt="phone icon">
+						<span>+254-790-502-966</span>
+					</a>
+				</div>
+			</section>
+
+			<section id="projects" class="projects container">
+				<h2>Selected Projects</h2>
+				<div class="grid">
+					<article class="card">
+						<div class="card-media"><img src="assets/project3.png" alt="ML regression screenshot"></div>
+						<div class="card-body">
+							<h3>Machine Learning Regression project</h3>
+							<p>Predictive modeling and regression analysis using Python; explores relationships between features to deliver insights.</p>
+							<p class="card-links"><img class="link-icon" src="assets/canva-duo.png" alt="notebook icon"><a href="https://colab.research.google.com/drive/1CAjumjBTujqH3sDjYx5DJYlwemo_couV?usp=sharing" target="_blank" rel="noopener">Open in Colab</a></p>
+						</div>
+					</article>
+					<article class="card">
+						<div class="card-media"><img src="assets/project1.png" alt="CS/DA03 Exploration screenshot"></div>
+						<div class="card-body">
+							<h3>CS/DA03 — Data Exploration (Kaggle)</h3>
+							<p>Exploratory data analysis and visualization for CS/DA03 using pandas and matplotlib; includes cleaned datasets and insights.</p>
+							<p class="card-links"><img class="link-icon" src="assets/github.png" alt="code icon"><a href="https://www.kaggle.com/code/christinearengti/miliong-christine-areng-cs-da03-26067-exploration" target="_blank" rel="noopener">Code (Kaggle)</a></p>
+						</div>
+					</article>
+
+					<article class="card">
+						<div class="card-media"><img src="assets/project2.png" alt="Project Two screenshot"></div>
+						<div class="card-body">
+							<h3>Project — Drive File</h3>
+							<p>Project documents and supporting files stored on Google Drive; includes datasets and report PDF.</p>
+							<p class="card-links"><img class="link-icon" src="assets/home-canva.png" alt="file icon"><a href="https://drive.google.com/file/d/1FB35ok4SGEo5sIyAlfNeyMUQnTAuRFdu/view?usp=sharing" target="_blank" rel="noopener">File (Drive)</a></p>
+						</div>
+					</article>
+
+					<article class="card">
+						<div class="card-media"><img src="assets/project3.png" alt="Project Three screenshot"></div>
+						<div class="card-body">
+							<h3>Interactive Notebook — Colab</h3>
+							<p>Interactive Colab notebook demonstrating analysis and visualizations; run cells online to reproduce results.</p>
+							<p class="card-links"><img class="link-icon" src="assets/canva-duo.png" alt="notebook icon"><a href="https://colab.research.google.com/drive/1hSYheioz7WopIVUSR2z9XXPz0cy4xCTN?usp=sharing" target="_blank" rel="noopener">Open in Colab</a></p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section id="about" class="about container">
+			<div class="about-inner">
+				<div class="about-text">
+					<h2>About Me</h2>
+					<p>I'm a Data Science / Machine Learning practitioner focused on building models, analysing data, and uncovering insights through exploratory analysis. I work with Python, SQL, and modern tools to design experiments, pipelines, and create meaningful visualizations.</p>
+					<h3>Technologies & Tools</h3>
+					<div class="tech-list">
+						<span class="tech-tag">Python</span>
+						<span class="tech-tag">SQL</span>
+						<span class="tech-tag">R Programming</span>
+						<span class="tech-tag">Power BI</span>
+						<span class="tech-tag">Tableau</span>
+						<span class="tech-tag">Kobo Toolbox</span>
+						<span class="tech-tag">STATA</span>
+						<span class="tech-tag">SPSS</span>
+						<span class="tech-tag">Excel</span>
+						<span class="tech-tag">Pandas</span>
+						<span class="tech-tag">NumPy</span>
+						<span class="tech-tag">Apache Spark</span>
+						<span class="tech-tag">Airflow</span>
+						<span class="tech-tag">Jupyter</span>
+						<span class="tech-tag">BigQuery</span>
+						<span class="tech-tag">AWS</span>
+						<span class="tech-tag">Azure</span>
+						<span class="tech-tag">Kafka</span>
+						<span class="tech-tag">DataDog</span>
+						<span class="tech-tag">GitHub</span>
+						<span class="tech-tag">Docker</span>
+						<span class="tech-tag">Kubernetes</span>
+						<span class="tech-tag">Git</span>
+						<span class="tech-tag">CI/CD</span>
+					</div>
+				</div>
+				<div class="about-image">
+					<img src="assets/about-pic.png" alt="Areng">
+				</div>
+			</div>
+			</section>
+
+		<section id="contact" class="contact-page">
+			<div class="contact-bg" style="background-image:url('assets/canva-duo.png')"></div>
+			<div class="contact-overlay">
+				<div class="container contact-content">
+					<div class="about-section-overlay">
+						<h3>Let's Connect! 🚀</h3>
+						<form id="contact-form" class="contact-form-cute">
+							<input type="text" id="name" name="name" placeholder="Your Name" required>
+							<input type="email" id="email" name="email" placeholder="Your Email" required>
+							<textarea id="message" name="message" placeholder="Your Message ✨" rows="4" required></textarea>
+							<button type="submit" class="btn-cute">Send Message 💌</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<p>© 2026 Areng — Building Data for Impact</p>
+			</div>
+		</footer>
+	</body>
+</html>
