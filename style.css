@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap');
 
 :root{
 	--bg:#faf6f1;
@@ -8,29 +9,31 @@
 }
 *{box-sizing:border-box}
 html,body{height:100%}
-body{margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helvetica Neue",Arial;padding:0;color:var(--text);background:var(--bg);line-height:1.5}
+body{margin:0;font-family:'DM Sans',Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helvetica Neue",Arial;padding:0;color:var(--text);background:var(--bg);line-height:1.5}
+h1,h2,h3,.brand{font-family:'Playfair Display',Georgia,serif}
 .container{max-width:var(--container);margin:0 auto;padding:0 1rem}
 
 .site-header{border-bottom:1px solid #e6e9ee;background:linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.9));position:sticky;top:0;backdrop-filter:blur(4px);z-index:40}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
-.brand{font-weight:700;color:var(--text);text-decoration:none}
+.brand{font-weight:700;color:var(--text);text-decoration:none;font-size:1.2rem;letter-spacing:0.3px}
 #nav-toggle{display:none;background:transparent;border:1px solid #ddd;padding:.4rem .6rem;border-radius:6px}
 .primary-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
 .primary-nav a{text-decoration:none;color:var(--muted);transition:all 0.3s ease}
 .primary-nav a:hover{color:var(--accent);font-weight:700;text-shadow:0 0 8px rgba(166,124,82,0.4)}
 
-.hero{padding:4rem 0}
-.hero-inner{display:grid;grid-template-columns:2fr 1fr;gap:2rem;align-items:center}
+.hero{padding:4rem 0;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:0}
+.hero-inner{display:grid;grid-template-columns:2fr 1fr;gap:2rem;align-items:center;position:relative;z-index:1}
 .hero-text h1{margin:0 0 1rem;font-size:2rem}
 .hero-text p{margin:0 0 0.8rem;color:var(--muted);line-height:1.6}
-.btn{display:inline-block;background:var(--accent);color:white;padding:.6rem .9rem;border-radius:8px;text-decoration:none;transition:all 0.3s ease;cursor:pointer}
+.btn{display:inline-block;background:var(--accent);color:white;padding:.6rem .9rem;border-radius:8px;text-decoration:none;transition:all 0.3s ease;cursor:pointer;letter-spacing:0.5px;font-weight:600;border:1.5px solid transparent}
 .btn:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 0 20px rgba(166,124,82,0.5),0 8px 20px rgba(166,124,82,0.3);background:#c0905f}
 .hero-image{width:260px;height:260px;border-radius:12px;background:linear-gradient(135deg,#e8d4c4,#dcc9b8)}
 .hero-image img{width:100%;height:100%;object-fit:cover;border-radius:12px;transition:transform 0.4s ease}
 .hero-image:hover img{transform:scale(1.12);filter:brightness(1.1)}
 
 .chatbot-container{flex:1;background:white;border:1px solid #eef1f4;border-radius:10px;padding:1.5rem;box-shadow:0 8px 20px rgba(16,24,40,0.06);display:flex;flex-direction:column;max-height:400px}
-.chatbot-header{font-weight:700;color:var(--accent);margin-bottom:1rem;font-size:1.1rem}
+.chatbot-header{font-weight:700;color:var(--accent);margin-bottom:1rem;font-size:1.1rem;font-family:'Playfair Display',Georgia,serif}
 .chatbot-messages{flex:1;overflow-y:auto;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.75rem;padding:0.5rem 0}
 .chatbot-message{padding:0.75rem;border-radius:8px;max-width:90%;word-wrap:break-word}
 .chatbot-message.user{background:var(--accent);color:white;align-self:flex-end;text-align:right}
@@ -44,19 +47,20 @@ body{margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helveti
 .chatbot-send:hover{background:#c0905f;box-shadow:0 0 20px rgba(166,124,82,0.5);transform:scale(1.05)}
 .chatbot-send:active{transform:scale(0.98)}
 
-.contact-links{padding: 50px;text-align:center;background:linear-gradient(135deg,rgba(166,124,82,0.05),rgba(166,124,82,0.08));border-radius:12px;margin:1rem auto;max-width: 1200px;width: 100%}
-.contact-grid{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-evenly;align-items:center;margin: 0 auto}
+.contact-links{padding:50px;text-align:center;background:linear-gradient(135deg,rgba(166,124,82,0.05),rgba(166,124,82,0.08));border-radius:12px;margin:1rem auto;max-width:1200px;width:100%}
+.contact-grid{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-evenly;align-items:center;margin:0 auto}
 .contact-link{display:flex;flex-direction:column;align-items:center;gap:0.75rem;text-decoration:none;color:#6b5344;transition:all 0.3s ease}
-.contact-link img{width:30px;height:60px;object-fit:contain;filter:sepia(0.4) hue-rotate(10deg) saturate(0.7) brightness(0.9);animation:jingle 0.5s ease-in-out infinite;transition:all 0.3s ease}
+.contact-link img{width:30px;height:60px;object-fit:contain;filter:sepia(0.4) hue-rotate(10deg) saturate(0.7) brightness(0.9);animation:none;transition:all 0.3s ease}
 .contact-link span{font-weight:500;color:#6b5344;font-size:0.8rem}
 .contact-link:hover{transform:scale(1.15)}
-.contact-link:hover img{width:75px;height:75px;filter:sepia(0.2) hue-rotate(10deg) saturate(1.1) brightness(1.1);animation:jingle 0.35s ease-in-out infinite}
+.contact-link:hover img{width:75px;height:75px;filter:sepia(0.2) hue-rotate(10deg) saturate(1.1) brightness(1.1);animation:jingle 0.4s ease-in-out 3}
 
 .projects{padding:2.5rem 0}
 .projects h2{margin-top:0}
+.projects::before{content:'';display:block;width:60px;height:3px;background:var(--accent);border-radius:2px;margin-bottom:1.5rem}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-.card{background:white;border:1px solid #eef1f4;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
-.card:hover {box-shadow: 0 10px 25px rgba(166,124,82,0.3), 0 12px 28px rgba(16,24,40,0.15);transform: translateY(-6px);border-color: var(--accent);}
+.card{background:white;border:1px solid #eef1f4;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s ease}
+.card:hover{box-shadow:0 10px 25px rgba(166,124,82,0.3),0 12px 28px rgba(16,24,40,0.15);transform:translateY(-6px);border-color:var(--accent)}
 .card-media{height:140px;position:relative;overflow:hidden;background:#fff}
 .card-media .media-inner{width:100%;height:100%;position:relative}
 .card-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 220ms cubic-bezier(.2,.9,.3,1)}
@@ -73,6 +77,7 @@ body{margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helveti
 .card-links a:hover{opacity:.9;text-decoration:underline}
 
 .about,.contact{padding:2rem 0}
+.about::before{content:'';display:block;width:60px;height:3px;background:var(--accent);border-radius:2px;margin-bottom:1.5rem}
 .about-inner{display:flex;gap:2rem;align-items:center}
 .about-text{flex:1}
 .about-image{flex:0 0 240px;text-align:center}
@@ -103,7 +108,7 @@ form{display:grid;gap:.5rem;max-width:560px}
 input,textarea{padding:.6rem;border:1px solid #d6d9dd;border-radius:6px;transition:all 0.3s ease;font-family:inherit}
 input:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(166,124,82,0.2),0 0 12px rgba(166,124,82,0.3);background:#fff;transform:scale(1.02)}
 
-.site-footer{padding:1.5rem 0;border-top:1px solid #e8ebef;color:var(--muted)}
+.site-footer{padding:1.5rem 0;border-top:1px solid #e8ebef;color:var(--muted);text-align:center;font-size:0.9rem}
 
 @media (max-width:1000px){
 	.grid{grid-template-columns:repeat(2,1fr)}
@@ -111,7 +116,12 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 
 	.hero-image{width:200px;height:200px}
 	.about-inner{flex-direction:column;align-items:center}
 	.about-image{flex:0 0 auto;margin-top:1.5rem}
-	.contact-link img{animation:jingle 0.5s ease-in-out infinite}
+	.contact-link img{animation:none}
+}
+
+@media (max-width:600px){
+	.grid{grid-template-columns:1fr}
+	.hero-text h1{font-size:1.6rem}
 }
 
 @keyframes jingle{
